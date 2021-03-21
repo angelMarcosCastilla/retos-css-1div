@@ -1,0 +1,45 @@
+/* 
+IMPORTANTE: LO HE CONSEGUIDO CON DOS DIVS, SI LO CONSIGUES CON UNO MÁNDAME LA SOLUCIÓN A DISCORD
+Colors:
+  Background: #6592CF
+  House: #243D83
+  Lights: #EEB850
+*/
+.bg {
+  width: 400px;
+  height: 300px;
+  background: #6592cf;
+  display: grid;
+  place-items: center;
+}
+
+.house{
+  display: grid;
+  place-items: center;
+  position: relative;
+  width: 200px;
+  height: 250px;
+  background: conic-gradient(transparent 135deg, #243D83 135deg, 225deg,transparent 225deg) top -100px  center / 200px 200px  no-repeat,
+              linear-gradient(#243D83,#243D83)  bottom 50px center / 150px 100px no-repeat;
+}
+.house::after,
+.house::before{
+  content: "";
+  position: absolute;
+  display: block;
+  background-color:#EEB850;
+}
+
+.house::after{
+  width: 50px;
+  height: 50px;
+  bottom: 50px;
+  border-radius: 10px 10px 0 0;
+}
+
+.house::before{
+  width: 100px;
+  height: 10px;
+  border-radius: 5px;
+  top:95px
+}
